@@ -94,5 +94,5 @@ def testpost():
 	return jsonify(dictToReturn)
 
 
-#if __name__ == "__main__":
-#	app.run()
+if __name__ == "__main__":
+	app.run()
