@@ -69,10 +69,14 @@ def generate_keywords_from_url(url):
                 unique_vocabs[ent.text] += 1
             
     return unique_vocabs
-
 @app.route('/')
-def hello_world():
-	return 'This is my first API call!'
+def homepage():
+        text = """
+        <h1>Nothing to see here :)</h1>
+                <p>Call your API correctly using the correct path 'https://auto-api-heroku.herokuapp.com/generate'</p>
+                <p>Thanks for using!</p>
+        """
+        return text
 
 @app.route('/generate', methods=['POST'])
 def generate_keywords():
