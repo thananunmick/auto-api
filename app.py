@@ -9,10 +9,12 @@ from tqdm import tqdm
 from spacy.training import Example
 from bs4 import BeautifulSoup
 import requests
+from flask_cors import CORS
 #from requests_html import AsyncHTMLSession
 #import asyncio
 
 app = Flask(__name__)
+CORS(app)
 #app = Quart(__name__)
 nlp = spacy.load('ner')
 #session = AsyncHTMLSession()
