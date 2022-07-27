@@ -58,9 +58,9 @@ def generate_keywords_from_url(url):
     l_strip = list()
 
     for text in l_removed_empty:
-	stripped_text = text.strip()
-	if len(stripped_text) > 60:
-		l_strip.append(stripped_text)
+        stripped_text = text.strip()
+        if len(stripped_text) > 60:
+            l_strip.append(stripped_text)
         
     unique_vocabs = dict()
 
